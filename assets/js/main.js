@@ -1,6 +1,33 @@
 document.addEventListener('DOMContentLoaded', () => {
 
   const PROJECT_DATA = {
+  "meowpay-slice": {
+    "kind": "Open Source / AI-Enabled Full-Stack",
+    "title": "MeowPay Slice",
+    "summary": "An end-to-end slice of a treat-sending app for cats, built tooling-first: the AI workflow contract (CLAUDE.md, skills and planner/coder agents) was the first commit, before any app code.",
+    "architecture": [
+      "Kotlin / Spring Boot 4 REST API with PostgreSQL persistence (Spring Data JPA, Flyway migrations)",
+      "Transfer logic inside a database transaction with row-level locking, plus constraints enforced at the database layer",
+      "Next.js 16 (App Router, TypeScript) web frontend and a Flutter client using Clean Architecture and Cubit"
+    ],
+    "contributions": [
+      "Built the full slice across backend, web and mobile against one API",
+      "Committed the workflow contract first: CLAUDE.md, a run skill, a TDD skill, and tdd-planner and tdd-coder agents",
+      "Used red-green-refactor per stack, with Testcontainers for database-backed tests"
+    ],
+    "stack": [
+      "Kotlin",
+      "Spring Boot",
+      "PostgreSQL",
+      "Next.js",
+      "TypeScript",
+      "Flutter",
+      "AI Agents & Skills"
+    ],
+    "links": {
+      "gh": "https://github.com/TaniiSR/meowpay-slice"
+    }
+  },
   "motive-driver": {
     "kind": "Enterprise SaaS / Fleet Compliance",
     "title": "Motive Driver App",
@@ -253,6 +280,125 @@ document.addEventListener('DOMContentLoaded', () => {
     "links": {
       "play": "https://play.google.com/store/apps/details?id=qodit.com.lad"
     }
+  },
+  "noteapp": {
+    "kind": "Open Source / Multi-Module Android",
+    "title": "NoteApp",
+    "summary": "A demonstration of a multi-module Android app, split into app, core, data and UI-kit modules.",
+    "architecture": [
+      "Gradle modules for app, core, data and uikit with Kotlin DSL build scripts",
+      "MVVM with Hilt dependency injection and Jetpack Navigation"
+    ],
+    "contributions": [
+      "Structured the project as separate modules to show clear boundaries",
+      "Unit tests written TDD-style with JUnit and coroutines"
+    ],
+    "stack": [
+      "Kotlin",
+      "Hilt",
+      "Coroutines",
+      "Navigation",
+      "Glide",
+      "JUnit"
+    ],
+    "links": {
+      "gh": "https://github.com/TaniiSR/NoteApp"
+    }
+  },
+  "userlistingapp": {
+    "kind": "Open Source / Jetpack Compose",
+    "title": "UserListingApp",
+    "summary": "A modern Android app built with Jetpack Compose, MVVM, the Repository pattern and Hilt, with unit testing from the start.",
+    "architecture": [
+      "MVVM with the Repository pattern",
+      "Hilt for dependency injection, Navigation component for screens"
+    ],
+    "contributions": [
+      "Compose UI with coroutine-based async work",
+      "JUnit 5 unit tests following TDD"
+    ],
+    "stack": [
+      "Kotlin",
+      "Jetpack Compose",
+      "Hilt",
+      "Coroutines",
+      "JUnit 5"
+    ],
+    "links": {
+      "gh": "https://github.com/TaniiSR/UserListingApp"
+    }
+  },
+  "nytnewsapp": {
+    "kind": "Open Source / Clean Architecture",
+    "title": "NYT News App",
+    "summary": "A news app demonstrating the three Clean Architecture layers (data, domain, presentation) with a base layer and reusable custom components.",
+    "architecture": [
+      "Data, domain and presentation layers with the Repository pattern",
+      "Retrofit and Gson networking, Hilt, ViewBinding and Gradle Kotlin DSL"
+    ],
+    "contributions": [
+      "Applied SOLID principles across the layers",
+      "Unit tests written TDD-style with JUnit and coroutines"
+    ],
+    "stack": [
+      "Kotlin",
+      "Retrofit",
+      "Hilt",
+      "Coroutines",
+      "ViewBinding",
+      "JUnit"
+    ],
+    "links": {
+      "gh": "https://github.com/TaniiSR/NYTNewsApp"
+    }
+  },
+  "marvelapp": {
+    "kind": "Open Source / Clean Architecture",
+    "title": "MarvelApp",
+    "summary": "An Android sample app showing base classes, a repository layer and custom UI components under Clean Architecture and MVVM.",
+    "architecture": [
+      "Clean Architecture with MVVM and the Repository pattern",
+      "Hilt, Coroutines, Jetpack Navigation and Glide"
+    ],
+    "contributions": [
+      "Unit-tested the layers TDD-style",
+      "Gradle Kotlin DSL build setup"
+    ],
+    "stack": [
+      "Kotlin",
+      "Hilt",
+      "Coroutines",
+      "Navigation",
+      "Glide",
+      "JUnit"
+    ],
+    "links": {
+      "gh": "https://github.com/TaniiSR/MarvelApp"
+    }
+  },
+  "food-recipe-app": {
+    "kind": "Open Source / Clean Architecture",
+    "title": "Food Recipe App",
+    "summary": "A recipe app built on Clean Architecture and MVVM, demonstrating a base layer, the Repository pattern and custom components.",
+    "architecture": [
+      "Clean Architecture with MVVM and the Repository pattern",
+      "Hilt, Coroutines, Jetpack Navigation and Glide"
+    ],
+    "contributions": [
+      "Unit-tested the layers TDD-style",
+      "Gradle Kotlin DSL build setup"
+    ],
+    "stack": [
+      "Kotlin",
+      "Hilt",
+      "Coroutines",
+      "Navigation",
+      "Glide",
+      "JUnit"
+    ],
+    "links": {
+      "gh": "https://github.com/TaniiSR/Food-Recipe-App"
+    }
   }
 };
   /* ---------- Footer year ---------- */
@@ -365,7 +511,7 @@ document.addEventListener('DOMContentLoaded', () => {
     app: '<svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8.94-.11 1.84-.79 3.02-.87 1.42-.09 2.94.52 3.77 1.74-.09.06-2.25 1.31-2.22 3.9.03 3.09 2.7 4.11 2.73 4.13-.02.06-.42 1.44-1.38 2.27zM12.03 7.25c-.15-2.23 1.66-4.09 3.74-4.25.28 2.28-2.03 4.4-3.74 4.25z"/></svg>',
     web: '<svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm7.93 9h-3.05a15.7 15.7 0 00-1.13-5.28A8.02 8.02 0 0119.93 11zM12 4.06c.85 1.14 1.86 3.13 2.13 6.94H9.87c.27-3.81 1.28-5.8 2.13-6.94zM9.87 13h4.26c-.27 3.81-1.28 5.8-2.13 6.94-.85-1.14-1.86-3.13-2.13-6.94zM8.25 5.72A15.7 15.7 0 007.12 11H4.07a8.02 8.02 0 014.18-5.28zM4.07 13h3.05a15.7 15.7 0 001.13 5.28A8.02 8.02 0 014.07 13zm11.68 5.28A15.7 15.7 0 0016.88 13h3.05a8.02 8.02 0 01-4.18 5.28z"/></svg>'
   };
-  const storeLabels = { play: 'Play Store', app: 'App Store', web: 'Web Demo', pk: 'YAP Pakistan' };
+  const storeLabels = { play: 'Play Store', app: 'App Store', web: 'Web Demo', pk: 'YAP Pakistan', gh: 'GitHub Repo' };
 
   const closeModal = () => {
     if (!overlay) return;

@@ -32,14 +32,25 @@
     <div class="wrap">
       <div class="eyebrow-line"><span class="rule"></span> Engineering Showcase</div>
       <h1>Selected apps, shipped and maintained</h1>
-      <p>Ten production Android apps across fintech, fleet compliance, education, wellness, logistics and marketplaces. Filter by domain or browse everything.</p>
+      <p>Ten production apps across fintech, fleet compliance, education, wellness, logistics and marketplaces, plus public open-source repos on GitHub. Filter by domain or browse everything.</p>
     </div>
   </section>
 
   <section class="section" style="padding-top:20px;">
     <div class="wrap">
-      <div class="filter-bar reveal" role="tablist" aria-label="Project category filter"><button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Projects <span class="count">(10)</span></button><button class="filter-btn" data-filter="fintech" role="tab" aria-selected="false">FinTech <span class="count">(3)</span></button><button class="filter-btn" data-filter="enterprise" role="tab" aria-selected="false">Enterprise &amp; Logistics <span class="count">(2)</span></button><button class="filter-btn" data-filter="edtech" role="tab" aria-selected="false">EdTech &amp; Wellness <span class="count">(3)</span></button><button class="filter-btn" data-filter="marketplace" role="tab" aria-selected="false">Marketplace <span class="count">(2)</span></button></div>
+      <div class="filter-bar reveal" role="tablist" aria-label="Project category filter"><button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Projects <span class="count">(16)</span></button><button class="filter-btn" data-filter="fintech" role="tab" aria-selected="false">FinTech <span class="count">(3)</span></button><button class="filter-btn" data-filter="enterprise" role="tab" aria-selected="false">Enterprise &amp; Logistics <span class="count">(2)</span></button><button class="filter-btn" data-filter="edtech" role="tab" aria-selected="false">EdTech &amp; Wellness <span class="count">(3)</span></button><button class="filter-btn" data-filter="marketplace" role="tab" aria-selected="false">Marketplace <span class="count">(2)</span></button><button class="filter-btn" data-filter="opensource" role="tab" aria-selected="false">Open Source <span class="count">(6)</span></button></div>
       <div class="showcase-grid reveal" id="showcaseGrid">
+        <article class="showcase-card" data-cat="opensource" data-modal="meowpay-slice">
+          <div class="thumb"><div class="repo-thumb"><span>&lt;/&gt;</span><b>MeowPay Slice</b><i>github.com/TaniiSR</i></div><span class="cat-tag">Open Source</span></div>
+          <div class="body">
+            <h3>MeowPay Slice</h3>
+            <p class="subtitle">Personal project, public repo</p>
+            <p class="summary">An end-to-end slice of a treat-sending app for cats, built tooling-first: the AI workflow contract (CLAUDE.md, skills and planner/coder agents) was the first commit, before any app code.</p>
+            <div class="pill-row"><span class="pill">Kotlin</span><span class="pill">Spring Boot</span><span class="pill">PostgreSQL</span><span class="pill">Next.js</span><span class="pill">TypeScript</span><span class="pill">Flutter</span><span class="pill">AI Agents & Skills</span></div>
+            <div class="badge-impact-row"><span class="badge-impact">Backend + Web + Mobile</span><span class="badge-impact">AI-Agent Workflow</span></div>
+            <span class="card-link">View Repository Details</span>
+          </div>
+        </article>
         <article class="showcase-card" data-cat="enterprise" data-modal="motive-driver">
           <div class="thumb"><img src="Images/Motive/m1.webp" alt="Motive Driver App screenshot" loading="lazy"><span class="cat-tag">Enterprise</span></div>
           <div class="body">
@@ -148,6 +159,61 @@
             <div class="pill-row"><span class="pill">Java</span><span class="pill">Android SDK</span><span class="pill">WorkManager</span><span class="pill">Camera</span><span class="pill">MVVM</span></div>
             <div class="badge-impact-row"><span class="badge-impact">Offline-First</span><span class="badge-impact">Government</span></div>
             <span class="card-link">View Full Case Study</span>
+          </div>
+        </article>
+        <article class="showcase-card" data-cat="opensource" data-modal="noteapp">
+          <div class="thumb"><div class="repo-thumb"><span>&lt;/&gt;</span><b>NoteApp</b><i>github.com/TaniiSR</i></div><span class="cat-tag">Open Source</span></div>
+          <div class="body">
+            <h3>NoteApp</h3>
+            <p class="subtitle">Personal project, public repo</p>
+            <p class="summary">A demonstration of a multi-module Android app, split into app, core, data and UI-kit modules.</p>
+            <div class="pill-row"><span class="pill">Kotlin</span><span class="pill">Hilt</span><span class="pill">Coroutines</span><span class="pill">Navigation</span><span class="pill">Glide</span><span class="pill">JUnit</span></div>
+            <div class="badge-impact-row"><span class="badge-impact">Modular Architecture</span></div>
+            <span class="card-link">View Repository Details</span>
+          </div>
+        </article>
+        <article class="showcase-card" data-cat="opensource" data-modal="userlistingapp">
+          <div class="thumb"><div class="repo-thumb"><span>&lt;/&gt;</span><b>UserListingApp</b><i>github.com/TaniiSR</i></div><span class="cat-tag">Open Source</span></div>
+          <div class="body">
+            <h3>UserListingApp</h3>
+            <p class="subtitle">Personal project, public repo</p>
+            <p class="summary">A modern Android app built with Jetpack Compose, MVVM, the Repository pattern and Hilt, with unit testing from the start.</p>
+            <div class="pill-row"><span class="pill">Kotlin</span><span class="pill">Jetpack Compose</span><span class="pill">Hilt</span><span class="pill">Coroutines</span><span class="pill">JUnit 5</span></div>
+            <div class="badge-impact-row"><span class="badge-impact">Compose + MVVM</span></div>
+            <span class="card-link">View Repository Details</span>
+          </div>
+        </article>
+        <article class="showcase-card" data-cat="opensource" data-modal="nytnewsapp">
+          <div class="thumb"><div class="repo-thumb"><span>&lt;/&gt;</span><b>NYT News App</b><i>github.com/TaniiSR</i></div><span class="cat-tag">Open Source</span></div>
+          <div class="body">
+            <h3>NYT News App</h3>
+            <p class="subtitle">Personal project, public repo</p>
+            <p class="summary">A news app demonstrating the three Clean Architecture layers (data, domain, presentation) with a base layer and reusable custom components.</p>
+            <div class="pill-row"><span class="pill">Kotlin</span><span class="pill">Retrofit</span><span class="pill">Hilt</span><span class="pill">Coroutines</span><span class="pill">ViewBinding</span><span class="pill">JUnit</span></div>
+            <div class="badge-impact-row"><span class="badge-impact">Clean Architecture</span></div>
+            <span class="card-link">View Repository Details</span>
+          </div>
+        </article>
+        <article class="showcase-card" data-cat="opensource" data-modal="marvelapp">
+          <div class="thumb"><div class="repo-thumb"><span>&lt;/&gt;</span><b>MarvelApp</b><i>github.com/TaniiSR</i></div><span class="cat-tag">Open Source</span></div>
+          <div class="body">
+            <h3>MarvelApp</h3>
+            <p class="subtitle">Personal project, public repo</p>
+            <p class="summary">An Android sample app showing base classes, a repository layer and custom UI components under Clean Architecture and MVVM.</p>
+            <div class="pill-row"><span class="pill">Kotlin</span><span class="pill">Hilt</span><span class="pill">Coroutines</span><span class="pill">Navigation</span><span class="pill">Glide</span><span class="pill">JUnit</span></div>
+            <div class="badge-impact-row"><span class="badge-impact">Clean Architecture</span></div>
+            <span class="card-link">View Repository Details</span>
+          </div>
+        </article>
+        <article class="showcase-card" data-cat="opensource" data-modal="food-recipe-app">
+          <div class="thumb"><div class="repo-thumb"><span>&lt;/&gt;</span><b>Food Recipe App</b><i>github.com/TaniiSR</i></div><span class="cat-tag">Open Source</span></div>
+          <div class="body">
+            <h3>Food Recipe App</h3>
+            <p class="subtitle">Personal project, public repo</p>
+            <p class="summary">A recipe app built on Clean Architecture and MVVM, demonstrating a base layer, the Repository pattern and custom components.</p>
+            <div class="pill-row"><span class="pill">Kotlin</span><span class="pill">Hilt</span><span class="pill">Coroutines</span><span class="pill">Navigation</span><span class="pill">Glide</span><span class="pill">JUnit</span></div>
+            <div class="badge-impact-row"><span class="badge-impact">Clean Architecture</span></div>
+            <span class="card-link">View Repository Details</span>
           </div>
         </article>
       </div>
