@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1020"/><stop offset="0.55" stop-color="#1b1f4a"/><stop offset="1" stop-color="#3b1d5a"/>
+    </linearGradient>
+    <linearGradient id="coin" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffd86b"/><stop offset="1" stop-color="#f2a33a"/>
+    </linearGradient>
+    <linearGradient id="fur" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8fd3ff"/><stop offset="1" stop-color="#5b8cff"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#5b8cff" stop-opacity="0.45"/><stop offset="1" stop-color="#5b8cff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="900" cy="315" r="330" fill="url(#glow)"/>
+
+  <!-- text -->
+  <g font-family="Helvetica Neue, Helvetica, Arial, sans-serif" fill="#ffffff">
+    <text x="80" y="150" font-size="26" letter-spacing="4" fill="#8fd3ff" font-weight="600">OPEN SOURCE · AI-ENABLED FULL-STACK</text>
+    <text x="80" y="270" font-size="104" font-weight="700">MeowPay</text>
+    <text x="80" y="375" font-size="104" font-weight="700" fill="#8fd3ff">Slice</text>
+    <text x="80" y="440" font-size="32" fill="#c9d1f5">One cat sends treats to another.</text>
+    <text x="80" y="482" font-size="32" fill="#c9d1f5">Built tooling-first with AI agents &amp; TDD.</text>
+  </g>
+
+  <!-- chips -->
+  <g font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="24" fill="#ffffff" font-weight="600">
+    <rect x="80" y="520" width="118" height="46" rx="23" fill="#ffffff" fill-opacity="0.12" stroke="#ffffff" stroke-opacity="0.25"/><text x="139" y="551" text-anchor="middle">Kotlin</text>
+    <rect x="210" y="520" width="180" height="46" rx="23" fill="#ffffff" fill-opacity="0.12" stroke="#ffffff" stroke-opacity="0.25"/><text x="300" y="551" text-anchor="middle">Spring Boot</text>
+    <rect x="402" y="520" width="130" height="46" rx="23" fill="#ffffff" fill-opacity="0.12" stroke="#ffffff" stroke-opacity="0.25"/><text x="467" y="551" text-anchor="middle">Next.js</text>
+    <rect x="544" y="520" width="120" height="46" rx="23" fill="#ffffff" fill-opacity="0.12" stroke="#ffffff" stroke-opacity="0.25"/><text x="604" y="551" text-anchor="middle">Flutter</text>
+    <rect x="676" y="520" width="150" height="46" rx="23" fill="#ffffff" fill-opacity="0.12" stroke="#ffffff" stroke-opacity="0.25"/><text x="751" y="551" text-anchor="middle">PostgreSQL</text>
+  </g>
+
+  <!-- cat -->
+  <g transform="translate(900 300)">
+    <polygon points="-150,-70 -120,-190 -45,-120" fill="url(#fur)"/>
+    <polygon points="150,-70 120,-190 45,-120" fill="url(#fur)"/>
+    <polygon points="-125,-95 -112,-155 -78,-120" fill="#ffb3c7"/>
+    <polygon points="125,-95 112,-155 78,-120" fill="#ffb3c7"/>
+    <ellipse cx="0" cy="0" rx="170" ry="150" fill="url(#fur)"/>
+    <ellipse cx="-62" cy="-18" rx="24" ry="30" fill="#0b1020"/>
+    <ellipse cx="62" cy="-18" rx="24" ry="30" fill="#0b1020"/>
+    <circle cx="-54" cy="-30" r="8" fill="#ffffff"/>
+    <circle cx="70" cy="-30" r="8" fill="#ffffff"/>
+    <polygon points="-14,28 14,28 0,44" fill="#ff7aa2"/>
+    <path d="M0 44 Q-18 66 -38 56 M0 44 Q18 66 38 56" stroke="#0b1020" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <g stroke="#e8f3ff" stroke-width="4" stroke-linecap="round" opacity="0.8">
+      <line x1="-95" y1="40" x2="-175" y2="28"/><line x1="-95" y1="58" x2="-175" y2="68"/>
+      <line x1="95" y1="40" x2="175" y2="28"/><line x1="95" y1="58" x2="175" y2="68"/>
+    </g>
+  </g>
+
+  <!-- treat coins -->
+  <g font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="700" text-anchor="middle">
+    <circle cx="1060" cy="150" r="48" fill="url(#coin)"/><circle cx="1060" cy="150" r="38" fill="none" stroke="#fff3c9" stroke-width="3"/>
+    <text x="1060" y="165" font-size="44" fill="#7a4a00">$</text>
+    <circle cx="940" cy="560" r="36" fill="url(#coin)"/><circle cx="940" cy="560" r="28" fill="none" stroke="#fff3c9" stroke-width="3"/>
+    <text x="940" y="573" font-size="32" fill="#7a4a00">$</text>
+    <circle cx="1100" cy="470" r="30" fill="url(#coin)"/><circle cx="1100" cy="470" r="23" fill="none" stroke="#fff3c9" stroke-width="3"/>
+    <text x="1100" y="481" font-size="26" fill="#7a4a00">$</text>
+  </g>
+</svg>
