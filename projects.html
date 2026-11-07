@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Work — Tanveer Munir</title>
+<meta name="description" content="Selected production Android apps by Tanveer Munir.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div class="ambient" aria-hidden="true"><span class="b1"></span><span class="b2"></span><span class="b3"></span></div>
+
+<header class="site-nav">
+  <div class="wrap">
+    <a href="index.html" class="brand">Tanveer<span class="dot">.</span>Munir <small>/ ENGINEER</small></a>
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="projects.html" class="active">Work</a></li><li><a href="expertise.html">Expertise</a></li><li><a href="achievements.html">Achievements</a></li><li><a href="contact.html">Contact</a></li>
+        <li><a href="contact.html" class="btn btn-primary nav-cta-mobile">Get in Touch</a></li>
+      </ul>
+    </nav>
+    <a href="contact.html" class="nav-cta">Get in Touch</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false"><span></span></button>
+  </div>
+</header>
+
+<main>
+  <section class="page-header">
+    <div class="wrap">
+      <div class="eyebrow-line"><span class="rule"></span> Engineering Showcase</div>
+      <h1>Selected apps, shipped and maintained</h1>
+      <p>Ten production Android apps across fintech, fleet compliance, education, wellness, logistics and marketplaces. Filter by domain or browse everything.</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:20px;">
+    <div class="wrap">
+      <div class="filter-bar reveal" role="tablist" aria-label="Project category filter"><button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Projects <span class="count">(10)</span></button><button class="filter-btn" data-filter="fintech" role="tab" aria-selected="false">FinTech <span class="count">(3)</span></button><button class="filter-btn" data-filter="enterprise" role="tab" aria-selected="false">Enterprise &amp; Logistics <span class="count">(2)</span></button><button class="filter-btn" data-filter="edtech" role="tab" aria-selected="false">EdTech &amp; Wellness <span class="count">(3)</span></button><button class="filter-btn" data-filter="marketplace" role="tab" aria-selected="false">Marketplace <span class="count">(2)</span></button></div>
+      <div class="showcase-grid reveal" id="showcaseGrid">
+        <article class="showcase-card" data-cat="enterprise" data-modal="motive-driver">
+          <div class="thumb"><img src="Images/Motive/m1.webp" alt="Motive Driver App screenshot" loading="lazy"><span class="cat-tag">Enterprise</span></div>
+          <div class="body">
+            <h3>Motive Driver App</h3>
+            <p class="subtitle">Software Engineer Android (L5), Motive</p>
+            <p class="summary">A core part of Motive's AI-powered operations platform. Commercial drivers across North America use it for electronic logging (ELD), Hours of Service, inspections and daily compliance workflows.</p>
+            <div class="pill-row"><span class="pill">Kotlin</span><span class="pill">Jetpack Compose</span><span class="pill">MVVM</span><span class="pill">BLE</span><span class="pill">Room</span><span class="pill">Firebase</span></div>
+            <div class="badge-impact-row"><span class="badge-impact">1M+ Users</span><span class="badge-impact">5% → 75% Test Coverage</span></div>
+            <span class="card-link">View Full Case Study</span>
+          </div>
+        </article>
+        <article class="showcase-card" data-cat="edtech" data-modal="mindvalley">
+          <div class="thumb"><img src="Images/Mindvalley/01.jpg" alt="Mindvalley screenshot" loading="lazy"><span class="cat-tag">EdTech</span></div>
+          <div class="body">
+            <h3>Mindvalley</h3>
+            <p class="subtitle">Senior Android Engineer</p>
+            <p class="summary">Mindvalley's flagship learning and personal-growth app. My work centred on the community, chat and social features.</p>
+            <div class="pill-row"><span class="pill">Kotlin</span><span class="pill">Jetpack Compose</span><span class="pill">Apollo GraphQL</span><span class="pill">Coroutines & Flow</span><span class="pill">MVVM</span><span class="pill">Clean Architecture</span></div>
+            <div class="badge-impact-row"><span class="badge-impact">1M+ Users</span><span class="badge-impact">+40% Connect Growth</span></div>
+            <span class="card-link">View Full Case Study</span>
+          </div>
+        </article>
+        <article class="showcase-card" data-cat="edtech" data-modal="mindvalley-states">
+          <div class="thumb"><img src="Images/MindvalleyStates/1.webp" alt="Mindvalley States screenshot" loading="lazy"><span class="cat-tag">EdTech</span></div>
+          <div class="body">
+            <h3>Mindvalley States</h3>
+            <p class="subtitle">Senior Mobile Developer, Mindvalley</p>
+            <p class="summary">A wellness app that helps people reach a chosen emotional state through meditation, hypnosis, soundscapes and guided content (Choose, Activate, Supplement, Enhance).</p>
+            <div class="pill-row"><span class="pill">Flutter</span><span class="pill">Dart</span><span class="pill">BLoC / Cubit</span><span class="pill">Clean Architecture</span><span class="pill">REST APIs</span></div>
+            <div class="badge-impact-row"><span class="badge-impact">Android + Flutter</span></div>
+            <span class="card-link">View Full Case Study</span>
+          </div>
+        </article>
+        <article class="showcase-card" data-cat="fintech" data-modal="yap">
+          <div class="thumb"><img src="Images/Yap/1.png" alt="YAP screenshot" loading="lazy"><span class="cat-tag">FinTech</span></div>
+          <div class="body">
+            <h3>YAP</h3>
+            <p class="subtitle">Senior Android Engineer</p>
+            <p class="summary">A multi-region digital banking and personal finance platform serving the UAE and Pakistan, covering wallets, debit cards, transfers and payments.</p>
+            <div class="pill-row"><span class="pill">Kotlin</span><span class="pill">Jetpack Compose</span><span class="pill">MVVM</span><span class="pill">Clean Architecture</span><span class="pill">REST APIs</span></div>
+            <div class="badge-impact-row"><span class="badge-impact">Multi-Region</span><span class="badge-impact">Led Pakistan MVP</span></div>
+            <span class="card-link">View Full Case Study</span>
+          </div>
+        </article>
+        <article class="showcase-card" data-cat="fintech" data-modal="vowpay">
+          <div class="thumb"><img src="Images/VowPay/01.jpg" alt="VowPay screenshot" loading="lazy"><span class="cat-tag">FinTech</span></div>
+          <div class="body">
+            <h3>VowPay</h3>
+            <p class="subtitle">Senior Android Engineer</p>
+            <p class="summary">A digital payments and remittance app for international money transfer, wallets, QR payments and bank account linking.</p>
+            <div class="pill-row"><span class="pill">Kotlin</span><span class="pill">Java</span><span class="pill">Jetpack Compose</span><span class="pill">MVVM</span><span class="pill">Clean Architecture</span><span class="pill">REST APIs</span></div>
+            <div class="badge-impact-row"><span class="badge-impact">Secure Transfers</span><span class="badge-impact">Wallet & QR</span></div>
+            <span class="card-link">View Full Case Study</span>
+          </div>
+        </article>
+        <article class="showcase-card" data-cat="fintech" data-modal="edb360">
+          <div class="thumb"><img src="Images/EDB360/1.png" alt="EDB 360 screenshot" loading="lazy"><span class="cat-tag">FinTech</span></div>
+          <div class="body">
+            <h3>EDB 360</h3>
+            <p class="subtitle">Senior Android Developer, Digitify</p>
+            <p class="summary">A business-banking app built for Emirates Development Bank, giving UAE SMEs digital access to accounts, payments and other banking services.</p>
+            <div class="pill-row"><span class="pill">Kotlin</span><span class="pill">Java</span><span class="pill">XML</span><span class="pill">MVVM</span><span class="pill">Clean Architecture</span></div>
+            <div class="badge-impact-row"><span class="badge-impact">50K+ Downloads</span><span class="badge-impact">Regulated FinTech</span></div>
+            <span class="card-link">View Full Case Study</span>
+          </div>
+        </article>
+        <article class="showcase-card" data-cat="enterprise" data-modal="barq">
+          <div class="thumb"><img src="Images/Barq/1.jpg" alt="BARQ screenshot" loading="lazy"><span class="cat-tag">Enterprise</span></div>
+          <div class="body">
+            <h3>BARQ</h3>
+            <p class="subtitle">Android Engineer, Ilsa Interactive</p>
+            <p class="summary">A logistics and last-mile delivery platform with customer and driver apps: delivery requests, live tracking and optimised routes.</p>
+            <div class="pill-row"><span class="pill">Kotlin</span><span class="pill">Java</span><span class="pill">Google Maps SDK</span><span class="pill">WorkManager</span><span class="pill">FCM</span><span class="pill">MVVM</span></div>
+            <div class="badge-impact-row"><span class="badge-impact">10K+ Users</span><span class="badge-impact">75% Maintainability Audit</span></div>
+            <span class="card-link">View Full Case Study</span>
+          </div>
+        </article>
+        <article class="showcase-card" data-cat="marketplace" data-modal="scrapbays">
+          <div class="thumb"><img src="Images/Scrapbays/s1.webp" alt="ScrapBays screenshot" loading="lazy"><span class="cat-tag">Marketplace</span></div>
+          <div class="body">
+            <h3>ScrapBays</h3>
+            <p class="subtitle">Senior Android Developer</p>
+            <p class="summary">A digital marketplace connecting individuals, businesses and recyclers to buy, sell and manage recyclable materials.</p>
+            <div class="pill-row"><span class="pill">Kotlin</span><span class="pill">Jetpack Compose</span><span class="pill">Google Maps</span><span class="pill">MVVM</span><span class="pill">Clean Architecture</span></div>
+            <div class="badge-impact-row"><span class="badge-impact">10K+ Users</span></div>
+            <span class="card-link">View Full Case Study</span>
+          </div>
+        </article>
+        <article class="showcase-card" data-cat="marketplace" data-modal="mgasha">
+          <div class="thumb"><img src="Images/chbib/1.webp" alt="MGASHA screenshot" loading="lazy"><span class="cat-tag">Marketplace</span></div>
+          <div class="body">
+            <h3>MGASHA</h3>
+            <p class="subtitle">Android Developer, Ilsa Interactive</p>
+            <p class="summary">A B2C e-commerce app covering browsing, search, wishlist, cart, checkout and order tracking.</p>
+            <div class="pill-row"><span class="pill">Java</span><span class="pill">XML</span><span class="pill">Retrofit</span><span class="pill">MVVM</span><span class="pill">Dependency Injection</span></div>
+            <div class="badge-impact-row"><span class="badge-impact">Full Shopping Flow</span></div>
+            <span class="card-link">View Full Case Study</span>
+          </div>
+        </article>
+        <article class="showcase-card" data-cat="edtech" data-modal="lad">
+          <div class="thumb"><img src="Images/Lad/1.PNG" alt="Literacy Assessment Drive screenshot" loading="lazy"><span class="cat-tag">EdTech</span></div>
+          <div class="body">
+            <h3>Literacy Assessment Drive</h3>
+            <p class="subtitle">Android Developer, QodIT</p>
+            <p class="summary">An offline-capable assessment app for field assessors working for the Government of Punjab, digitising literacy assessments in public schools.</p>
+            <div class="pill-row"><span class="pill">Java</span><span class="pill">Android SDK</span><span class="pill">WorkManager</span><span class="pill">Camera</span><span class="pill">MVVM</span></div>
+            <div class="badge-impact-row"><span class="badge-impact">Offline-First</span><span class="badge-impact">Government</span></div>
+            <span class="card-link">View Full Case Study</span>
+          </div>
+        </article>
+      </div>
+      <p id="emptyState" style="display:none; text-align:center; color:var(--text-1);">No projects in this category yet.</p>
+    </div>
+  </section>
+
+  <section class="section" id="contact-cta">
+    <div class="wrap">
+      <div class="closing reveal">
+        <h2>Building something that has to work at scale?</h2>
+        <p>Open to senior Android engineering roles and technical leadership.</p>
+        <div class="cta-row">
+          <a href="contact.html" class="btn btn-primary">Start a Conversation</a>
+          <a href="projects.html" class="btn btn-ghost">See the Full Showcase</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand">Tanveer<span class="dot">.</span>Munir</a>
+        <p>Senior Android Engineer building scalable, maintainable apps for FinTech, EdTech, Logistics and Enterprise products.</p>
+        <div class="social-row">
+          <a href="https://github.com/TaniiSR" aria-label="GitHub" target="_blank" rel="noopener"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5A11.5 11.5 0 000 12.1c0 5.16 3.29 9.53 7.86 11.08.58.11.79-.26.79-.57v-2.02c-3.2.72-3.88-1.57-3.88-1.57-.52-1.36-1.28-1.72-1.28-1.72-1.05-.74.08-.72.08-.72 1.16.08 1.77 1.22 1.77 1.22 1.03 1.8 2.7 1.28 3.36.98.1-.76.4-1.28.73-1.58-2.55-.3-5.24-1.32-5.24-5.86 0-1.29.45-2.35 1.19-3.18-.12-.3-.52-1.53.11-3.19 0 0 .98-.32 3.2 1.22a10.9 10.9 0 015.83 0c2.21-1.54 3.19-1.22 3.19-1.22.63 1.66.23 2.89.11 3.19.74.83 1.19 1.89 1.19 3.18 0 4.55-2.7 5.55-5.26 5.85.41.37.78 1.1.78 2.22v3.29c0 .31.21.69.8.57A11.5 11.5 0 0024 12.1 11.5 11.5 0 0012 .5z"/></svg></a>
+          <a href="https://stackoverflow.com/users/10862130/tanveer-munir" aria-label="Stack Overflow" target="_blank" rel="noopener"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 20.8v-5.4h1.8V22.6H3.3v-7.2h1.8v5.4h13.8zM7 15.1l8.8 1.8.4-1.8-8.8-1.8L7 15.1zm1.2-4.3 8.2 3.8.8-1.7-8.2-3.8-.8 1.7zm2.3-4.2 6.9 5.8 1.2-1.4-6.9-5.8-1.2 1.4zM15.6 1.4 14.2 2.5l5.4 7.3 1.4-1.1-5.4-7.3zM7 19h9.9v-1.8H7V19z"/></svg></a>
+        </div>
+      </div>
+      <div><h4>Navigate</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="projects.html">Work</a></li><li><a href="expertise.html">Expertise</a></li><li><a href="achievements.html">Achievements</a></li></ul></div>
+      <div><h4>Focus Areas</h4><ul><li><a href="projects.html">FinTech</a></li><li><a href="projects.html">Fleet &amp; Logistics</a></li><li><a href="expertise.html">Architecture</a></li><li><a href="expertise.html">Jetpack Compose</a></li></ul></div>
+      <div><h4>Elsewhere</h4><ul><li><a href="https://github.com/TaniiSR" target="_blank" rel="noopener">GitHub</a></li><li><a href="https://stackoverflow.com/users/10862130/tanveer-munir" target="_blank" rel="noopener">Stack Overflow</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> Tanveer Munir. All rights reserved.</span>
+      <span>Built with Kotlin &amp; care.</span>
+    </div>
+  </div>
+</footer>
+
+<div class="modal-overlay" id="modalOverlay"><div class="modal" id="modalContent" role="dialog" aria-modal="true"></div></div>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
